@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &128264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 461836}
+  - 114: {fileID: 11453484}
+  m_Layer: 0
+  m_Name: objectSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461836
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.7425594, y: -2.79026318, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11453484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a0e82fb60b3244b8894e8bdc1431d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPrefab: {fileID: 110020, guid: 624159d4f3cbaa44dae814bdbe6ccb84, type: 2}
+  stickyPrefab: {fileID: 121018, guid: 6bcb15d8538cda54a928926ff9f9aaa8, type: 2}
+  bombPrefab: {fileID: 153036, guid: 4cd922f7afefab34a83e3891248ebe35, type: 2}
+  spawnedObject: {fileID: 128264}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: boxPrefab
+      value: 
+      objectReference: {fileID: 110020, guid: 624159d4f3cbaa44dae814bdbe6ccb84, type: 2}
+    - target: {fileID: 0}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 153036, guid: 4cd922f7afefab34a83e3891248ebe35, type: 2}
+    - target: {fileID: 0}
+      propertyPath: stickyPrefab
+      value: 
+      objectReference: {fileID: 121018, guid: 6bcb15d8538cda54a928926ff9f9aaa8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spawnedObject
+      value: 
+      objectReference: {fileID: 128264}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 128264}
+  m_IsPrefabParent: 1
